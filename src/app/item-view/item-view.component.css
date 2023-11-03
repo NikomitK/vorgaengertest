@@ -1,0 +1,10 @@
+.item-list {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 10px;
+}
+
+.card {
+    width: 300px;
+}
