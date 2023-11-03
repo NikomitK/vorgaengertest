@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { DemoItem } from '../demo-item';
 
 @Component({
   selector: 'app-assed-body',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AssedBodyComponent {
 
+  @Input()
+  asset?: DemoItem;
+
+  constructor() {
+   }
 }

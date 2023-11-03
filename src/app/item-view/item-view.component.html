@@ -1,6 +1,20 @@
-<h2>Select Asset</h2>
-<div class="item-list">
-    <button *ngFor="let item of items" class="card" mat-raised-button>
-        {{item}}
-    </button>
+<h2 class="listbox-label" id="item-label">
+    Select Asset
+</h2>
+
+<div class="listbox-container">
+    <ul cdkListbox [cdkListboxValue]="curItem" [cdkListboxCompareWith]="compareId"
+        (cdkListboxValueChange)="curItem = $event.value" class="listbox">
+
+        <li *ngFor="let item of itemlist" [cdkOption]="item" class="option">
+            <mat-card>
+                <mat-card-content>
+                    {{item.name}}
+                </mat-card-content>
+            </mat-card>
+        </li>
+
+    </ul>
 </div>
+
+<app-assed-body [asset]="curItem[0]"></app-assed-body>

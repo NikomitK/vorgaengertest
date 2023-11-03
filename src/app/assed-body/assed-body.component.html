@@ -1,1 +1,11 @@
-<p>assed-body works!</p>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>{{asset?.name}}</mat-card-title>
+        <mat-card-subtitle>{{asset?.id}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <p>{{asset?.description}}</p>
+        <p>{{asset?.price}}</p>
+        <p>{{asset?.quantity}}</p>
+    </mat-card-content>
+</mat-card>

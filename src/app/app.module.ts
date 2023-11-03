@@ -14,7 +14,9 @@ import { ItemViewComponent } from './item-view/item-view.component';
 import { ServerMenuComponent } from './server-menu/server-menu.component';
 import {MatListModule} from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {CdkListboxModule} from '@angular/cdk/listbox';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     MatListModule,
     MatButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    CdkListboxModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
